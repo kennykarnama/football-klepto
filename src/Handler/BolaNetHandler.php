@@ -11,6 +11,10 @@ class BolaNetHandler implements BolaNetHandlerInterface
 
     public const ITALIAN_LEAGUE = 'italia';
 
+    public const ENGLAND_LEAGUE = 'england';
+
+    public const SPAIN_LEAGUE = 'spain';
+
     /**
      * Club name repository
      * @var \Football\Repository\ClubNameRepo

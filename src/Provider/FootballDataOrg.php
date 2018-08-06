@@ -36,6 +36,18 @@ class FootballDataOrg implements ProviderInterface
      */
     public const MATCH_ENDPOINT = '/v2/matches';
 
+    public const ITALIAN_LEAGUE = [
+        'Serie A' => 2019,
+    ];
+
+    public const ENGLAND_LEAGUE = [
+        'Premier League' => 2021,
+    ];
+
+    public const SPAIN_LEAGUE = [
+        'Primera Division' => 2014,
+    ];
+
     /**
      * Api key
      * @var string

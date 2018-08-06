@@ -69,5 +69,129 @@
     {
       "Empoli FC": "Empoli"
     }
+  ],
+  "england":[
+    {
+      "Arsenal FC":"Arsenal"
+    },
+    {
+      "Chelsea FC":"Chelsea"
+    },
+    {
+      "Everton FC":"Everton"
+    },
+    {
+      "Fulham FC":"Fulham"
+    },
+    {
+      "Liverpool FC":"Liverpool"
+    },
+    {
+      "Manchester City FC":"Manchester City"
+    },
+    {
+      "Manchester United FC":"Manchester United"
+    },
+    {
+      "Newcastle United FC":"Newcastle"
+    },
+    {
+      "Tottenham Hotspur FC":"Tottenham Hotspur"
+    },
+    {
+      "Wolverhampton Wanderers FC":"Wolverhampton"
+    },
+    {
+      "Burnley FC":"Burnley"
+    },
+    {
+      "Leicester City FC":"Leicester City"
+    },
+    {
+      "Southampton FC":"Southampton"
+    },
+    {
+      "Watford FC":"Watford"
+    },
+    {
+      "Crystal Palace FC":"Crystal Palace"
+    },
+    {
+      "Huddersfield Town AFC":"Huddersfield Town"
+    },
+    {
+      "Brighton & Hove Albion FC":"Brighton"
+    },
+    {
+      "West Ham United FC":"West Ham"
+    },
+    {
+      "Cardiff City FC":"Cardiff City"
+    },
+    {
+      "AFC Bournemouth":"Bournemouth"
+    }
+  ],
+  "spain":[
+    {
+      "Athletic Club": "Atheltic Bilbao"
+    },
+    {
+      "Club Atlético de Madrid":"Atlético Madrid"
+    },
+    {
+      "RCD Espanyol de Barcelona":"Espanyol"
+    },
+    {
+      "FC Barcelona":"Barcelona"
+    },
+    {
+      "Getafe CF":"Getafe"
+    },
+    {
+      "Real Madrid CF":"Real Madrid"
+    },
+    {
+      "Rayo Vallecano de Madrid":"Rayo Vallecano"
+    },
+    {
+      "Levante UD":"Levante"
+    },
+    {
+      "Real Betis Balompié":"Real Betis"
+    },
+    {
+      "Real Sociedad de Fútbol":"Real Sociedad"
+    },
+    {
+      "Villarreal CF":"Villarreal"
+    },
+    {
+      "Valencia CF":"Valencia"
+    },
+    {
+      "Real Valladolid CF":"Real Valladolid"
+    },
+    {
+      "Deportivo Alavés":"Deportivo Alavés"
+    },
+    {
+      "SD Eibar":"Eibar"
+    },
+    {
+      "Girona FC":"Girona"
+    },
+    {
+      "SD Huesca":"Huesca"
+    },
+    {
+      "RC Celta de Vigo":"Celta de Vigo"
+    },
+    {
+      "Sevilla FC":"Sevilla"
+    },
+    {
+      "CD Leganés":"Leganés"
+    }
   ]
 }
