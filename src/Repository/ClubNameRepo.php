@@ -2,7 +2,7 @@
 
 namespace Football\Repository;
 
-use function Football\removeAccents;
+use function Football\removeAccentsIconv;
 
 /**
  * Class to provide
@@ -124,8 +124,11 @@ class ClubNameRepo implements RepositoryInterface
                 $v = array_merge(...array_filter($v, function ($value, $key) {
                     return is_numeric($key);
                 }, ARRAY_FILTER_USE_BOTH));
-                $v = removeAccents($v);
             });
+
+            foreach ($data as $key => $value) {
+                $value = removeAccentsIconv($value);
+            }
 
             return $data;
         } catch (\Throwable $e) {

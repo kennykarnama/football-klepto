@@ -4,6 +4,8 @@ namespace Football\Test;
 
 use Football\Handler\BolaNetHandler;
 use Football\Provider\FootballDataOrg;
+use function Football\removeAccents;
+use function Football\removeAccentsIconv;
 
 class BolaNetHandlerTest extends \PHPUnit\Framework\TestCase
 {
@@ -78,6 +80,36 @@ class BolaNetHandlerTest extends \PHPUnit\Framework\TestCase
         $this->assertNotNull($data);
 
         $status = $this->writeToFile($data, 'spain.json');
+    }
+
+    public function testNormalizer(): void
+    {
+        $testStr = [
+            'Leganés',
+            'Deportivo Alavés',
+            'Real Sociedad de Fútbol',
+            'Real Betis Balompié',
+            'Club Atlético de Madrid',
+
+        ];
+
+        $expectedStr = [
+            'Leganes',
+            'Deportivo Alaves',
+            'Real Sociedad de Futbol',
+            'Real Betis Balompie',
+            'Club Atletico de Madrid',
+
+        ];
+        setlocale(LC_ALL, 'en_US.utf8');
+
+        $count = count($expectedStr);
+
+        for ($i = 0; $i < $count; $i++) {
+            $output = removeAccentsIconv($testStr[$i]);
+            $this->assertSame($output, $expectedStr[$i]);
+            $this->assertSame($output, removeAccents($testStr[$i]));
+        }
     }
 
     /**

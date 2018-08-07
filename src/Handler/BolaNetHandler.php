@@ -4,7 +4,7 @@ namespace Football\Handler;
 
 use Football\Provider\FootballDataOrg;
 use Football\Repository\ClubNameRepo;
-use function Football\removeAccents;
+use function Football\removeAccentsIconv;
 
 class BolaNetHandler implements BolaNetHandlerInterface
 {
@@ -90,14 +90,14 @@ class BolaNetHandler implements BolaNetHandlerInterface
                 array_push($schedules, [
                     'schedule' => $wib->getTimeStamp(),
                     'schedule_ina' => $wib->format('Y-m-d H:i:s'),
-                    'club_home' => removeAccents(
+                    'club_home' => removeAccentsIconv(
                         $match['homeTeam']['name']
                     ),
                     'club_home_bola' => $this->clubRepo->search([
                         $league,
                         $match['homeTeam']['name'],
                     ]),
-                    'club_away' => removeAccents(
+                    'club_away' => removeAccentsIconv(
                         $match['awayTeam']['name']
                     ),
                     'club_away_bola' => $this->clubRepo->search([
