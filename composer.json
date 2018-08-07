@@ -13,7 +13,8 @@
         "symplify/easy-coding-standard": "^4.5"
     },
     "autoload": {
-        "psr-4": {"Football\\": "src/"}
+        "psr-4": {"Football\\": "src/"},
+        "files": ["src/Helper.php"]
     },
     "autoload-dev": {
         "psr-4": {

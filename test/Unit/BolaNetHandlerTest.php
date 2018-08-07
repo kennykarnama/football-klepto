@@ -39,6 +39,8 @@ class BolaNetHandlerTest extends \PHPUnit\Framework\TestCase
         );
 
         $this->assertNotNull($data);
+
+        $status = $this->writeToFile($data, 'italia.json');
     }
 
     public function testGetEnglandMatchSchedules(): void
@@ -56,6 +58,8 @@ class BolaNetHandlerTest extends \PHPUnit\Framework\TestCase
         );
 
         $this->assertNotNull($data);
+
+        $status = $this->writeToFile($data, 'england.json');
     }
 
     public function testGetSpainMatchSchedules(): void
@@ -72,5 +76,20 @@ class BolaNetHandlerTest extends \PHPUnit\Framework\TestCase
         );
 
         $this->assertNotNull($data);
+
+        $status = $this->writeToFile($data, 'spain.json');
+    }
+
+    /**
+     * Write to file
+     * @return mixed
+     */
+    private function writeToFile(array $data, string $fileName)
+    {
+        $handle = fopen($fileName, 'w+');
+        if ($handle) {
+            return fwrite($handle, json_encode($data));
+        }
+        return false;
     }
 }

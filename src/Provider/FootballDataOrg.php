@@ -48,6 +48,10 @@ class FootballDataOrg implements ProviderInterface
         'Primera Division' => 2014,
     ];
 
+    public const GERMAN_LEAGUE = [
+        'Bundesliga' => 2002,
+    ];
+
     /**
      * Api key
      * @var string
